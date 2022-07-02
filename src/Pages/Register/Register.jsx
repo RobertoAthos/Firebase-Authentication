@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import {Link,useNavigate} from 'react-router-dom'
 import { UserAuth } from '../../Context/AuthContext'
+import './Register.css'
 
 export default function Register() {
 
@@ -16,7 +17,7 @@ export default function Register() {
         setError('')
         try{
             await CreateUser(email,password)
-            navigate('/dashboard')
+            navigate('/Login')
         }catch(e){
             setError(e.message)
             console.log(e.message)
@@ -25,14 +26,14 @@ export default function Register() {
 
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='form-container'>
         <h2>Register User</h2>
-        <label>Email</label>
+        <label className='label'>Email</label>
         <input type={'email'} onChange={e=>{setEmail(e.target.value)}}/>
-        <label>Password</label>
+        <label className='label'>Password</label>
         <input type={'password'} onChange={e=>{setPassword(e.target.value)}}/>
-        <Link to='/Login'>Login</Link>
-        <button>Register</button>
+        <Link to='/Login' className='link'>if you already have an account, Log in.</Link>
+        <button className='Button'>Register</button>
     </form>
   )
 }

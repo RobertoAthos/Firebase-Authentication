@@ -18,11 +18,11 @@ export default function Dashboard() {
   }
 
   return (
-    <>
-        <div>User Logged in</div>
+    <div className='Dash-container'>
+        <h2>User Logged in:</h2>
         {auth.currentUser.email}
-        <button onClick={handlelogout}>LogOut</button>
-    </>
+       <div className='btn-container' onClick={handlelogout}> <button>LogOut</button></div>
+      </div>
 
  
   )

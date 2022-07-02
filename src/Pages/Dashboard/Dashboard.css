@@ -1,0 +1,10 @@
+.Dash-container>h2{
+    margin-bottom: 20px;
+}
+.Dash-container{
+    display: flex;
+    flex-direction: column;
+}
+.btn-container>button{
+    margin-top: 20px;
+}

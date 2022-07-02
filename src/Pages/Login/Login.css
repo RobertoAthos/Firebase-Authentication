@@ -1,0 +1,34 @@
+.form-container-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form-container-login>input{
+    padding: 15px;
+    width: 350px;
+    margin: 10px;
+    outline: 0;
+}
+.label-login{
+    text-align: left;
+    width: 350px;
+    color: royalblue;
+}
+.Button-login{
+    padding: 15px;
+    background-color: royalblue;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Button-login:hover{
+    background-color: rgb(19, 70, 226);
+    transition: 300ms;
+}

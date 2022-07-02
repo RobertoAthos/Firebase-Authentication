@@ -1,0 +1,35 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.form-container>input{
+    padding: 15px;
+    width: 350px;
+    margin: 10px;
+    outline: 0;
+}
+.Button{
+    padding: 15px;
+    background-color: royalblue;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Button:hover{
+    background-color: rgb(19, 70, 226);
+    transition: 300ms;
+}
+.label{
+    text-align: left;
+    width: 350px;
+    color: royalblue;
+}
+.link{
+    margin: 15px;
+}
